@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #0072ff, #00c6ff);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 10px 20px;
+            width: 100%;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            z-index: 10;
+        }
+
+        h2 {
+            margin-top: 80px; /* Space for fixed header */
+            color: #ffffff;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            font-size: 1.8em; /* Responsive font size */
+        }
+
+        .intro {
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            max-width: 600px;
+            width: 90%; /* Make intro section responsive */
+        }
+
+        .posts {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+            text-align: center;
+            width: 90%; /* Make posts section responsive */
+        }
+
+        nav {
+            margin: 20px 0;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            width: 90%; /* Responsive nav width */
+            text-align: center; /* Centered text in navigation */
+        }
+
+        nav a {
+            color: #0072ff;
+            text-decoration: none;
+            margin: 0 10px; /* Adjust margins for better spacing */
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        nav a:hover {
+            background: #46b3e6;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        footer {
+            margin-top: auto;
+            padding: 10px 20px;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            text-align: center;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+        }
+
+        /* Mobile responsive styles */
+        @media (max-width: 600px) {
+            h2 {
+                font-size: 1.5em; /* Adjust font size for mobile */
+            }
+
+            .intro, .posts, nav {
+                padding: 15px; /* Adjust padding for mobile */
+                margin: 10px; /* Adjust margin for mobile */
+            }
+
+            nav a {
+                padding: 8px 10px; /* Adjust button padding */
+                font-size: 14px; /* Responsive font size for links */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Blog</h1>
+    </header>
+
+    <h2>Welcome to My Blog</h2>
+
+    <div class="intro">
+        <p>Join us on an exciting journey through the world of ideas, thoughts, and experiences. 
+        Our blog covers a wide range of topics, from technology and lifestyle to travel and personal development. 
+        Whether you’re here to gain insights or just enjoy reading, we have something for everyone. 
+        Don’t forget to check out our latest posts!</p>
+    </div>
+
+    <nav>
+        <a href="index.php"><i class="fas fa-home"></i> Home</a>
+        <a href="create_post.php"><i class="fas fa-plus"></i> Create Post</a>
+        <a href="about.php"><i class="fas fa-user"></i> About</a>
+        <a href="contact.php"><i class="fas fa-envelope"></i> Contact</a>
+        <a href="login.php"><i class="fas fa-sign-in-alt"></i> Login</a>
+        <a href="signup.php"><i class="fas fa-user-plus"></i> Sign Up</a>
+        <a href="previous_post.php"><i class="fas fa-file-alt"></i> View Previous Posts</a>
+        <a href="logout.php"><i class="fas fa-sign-out-alt"></i> Logout</a> <!-- Added Logout Link -->
+    </nav>
+
+    <footer>
+        &copy; 2024 My Blog. All Rights Reserved.
+    </footer>
+</body>
+</html>
