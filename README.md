@@ -23,4 +23,4 @@ This is a simple blog application built with PHP and MySQL. Users can create, ed
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/IT-Thamarai-demo/Blogger-PHP
